@@ -246,7 +246,7 @@ function CommandCenterPage() {
     (alert) => alert.severity === "Critical" || alert.severity === "High"
   ).length;
 
-  const uniqueSources = new Set(signals.map((signal) => signal.source_url)).size;
+  //const uniqueSources = new Set(signals.map((signal) => signal.source_url)).size;
 
   const brightDataSignals = ingestionResult?.signals_collected || 0;
 
